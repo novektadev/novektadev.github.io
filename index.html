@@ -3,100 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bulma GitHub Pages Site</title>
-    
+    <link rel="icon" href="/assets/images/icons/flaticon/novektaFlaticon32px.png" type="image/png" sizes="32x32">
+    <title>NOVEKTA</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/flaticon/novektaFlaticon32px.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <section class="hero is-primary is-bold">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-1">
-                    Welcome to My Site!
-                </h1>
-                <p class="subtitle">
-                    Powered by Bulma CSS on GitHub Pages.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <span class="icon-text">
-                    <span class="icon"><i class="fas fa-home"></i></span> <span>My Brand</span>
-                </span>
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                    Home
+    <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+        <div class="container"> <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="assets/images/icons/novektaRecRedTransparent40px.png" alt="Novekta Logo" style="height: 40px; max-height: 40px;">
                 </a>
-                <a class="navbar-item" href="about.html">
-                    About
-                </a>
-                <a class="navbar-item" href="contact.html">
-                    Contact
-                </a>
-                 <a class="navbar-item" href="chatbot.lfpiorp/">
-                    Go to Chatbot App
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
             </div>
 
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-light" href="https://github.com/novektadev" target="_blank">
-                            <strong>GitHub Profile</strong>
-                        </a>
+            <div id="navbarBasic" class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-linkedin" id="linkedInButton">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Login with LinkedIn</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="navbar-end">
+                    <a class="navbar-item nav-link" data-content="inicio">
+                        Inicio
+                    </a>
+                    <a class="navbar-item nav-link" data-content="nosotros">
+                        Nosotros
+                    </a>
+                    <a class="navbar-item nav-link" data-content="servicios">
+                        Servicios
+                    </a>
+                    <a class="navbar-item nav-link" data-content="contacto">
+                        Contacto
+                    </a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </div> </nav>
 
-    <section class="section">
-        <div class="container">
-            <h2 class="title is-2">Content Area</h2>
-            <p class="content">
-                This is a sample paragraph within a Bulma container. You can add your main content here.
-                Bulma provides a responsive grid system and ready-to-use components like buttons, cards, forms, and more.
-            </p>
-            <p class="content">
-                Since there's no JavaScript, interactive elements like dropdowns, modals, or mobile navigation toggles (like the `navbar-burger` above) won't function. For those, you'd need to add a small amount of JS or use a static alternative.
-            </p>
-            <div class="buttons">
-                <button class="button is-success">A Bulma Button</button>
-                <button class="button is-info is-outlined">Another Button</button>
+    <div class="content-wrapper" id="contentWrapper">
+    </div>
+
+    <footer class="footer is-fixed-bottom has-background-dark has-text-white">
+        <div class="container"> <div class="content has-text-centered">
+                <p><strong class="has-text-white">novekta</strong> 2025</p>
+                <p>Tiempo local en Culiacán Sinaloa: <span id="currentTime"></span></p>
+                <div class="mt-4">
+                    <a class="button is-outlined is-light mr-2">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="button is-outlined is-light mr-2">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="button is-outlined is-light">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-            <span class="tag is-info is-light">Static Site</span>
-            <span class="tag is-primary is-light">Bulma CSS</span>
-        </div>
-    </section>
+        </div> </footer>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>My Bulma Site</strong> by <a href="https://github.com/novektadev" target="_blank">novektadev</a>.
-                The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
-            <p>&copy; 2025 All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
